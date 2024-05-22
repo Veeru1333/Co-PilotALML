@@ -7,7 +7,7 @@ stages:
 build:  
   stage: build  
   script:  
-    cd ArthiBasta/Co-pilotAIML/-/tree/main/examples/walk-my-dog?ref_type=heads
+    cd /builds/ArthiBasta/Co-pilotAIML/-/tree/main/examples/walk-my-dog?ref_type=heads
     - npm install    
     - npm pack  
   artifacts:    
