@@ -1,0 +1,15 @@
+image: node:14
+
+stages:  
+  - build 
+  - test  
+  - deploy
+build:  
+  stage: build  
+  script:    
+    - npm install    
+    - npm pack  
+  artifacts:    
+      paths:      
+        - "*.tgz"
+
