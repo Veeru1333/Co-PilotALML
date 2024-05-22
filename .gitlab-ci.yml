@@ -11,5 +11,5 @@ build:
     - npm pack  
   artifacts:    
       paths:      
-        - "*.tgz"
+        - "examples/walk-my-dog/*.tgz"
 
