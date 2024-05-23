@@ -1,0 +1,16 @@
+image: node:14
+
+stages:  
+  - build 
+  - test  
+  - deploy
+build:  
+  stage: build  
+  script:    
+    - cd /builds/ArthiBasta/Co-pilotAIML/examples/walk-my-dog
+    - npm install    
+    - npm pack  
+  artifacts:    
+      paths:      
+        - "*.tgz"
+
