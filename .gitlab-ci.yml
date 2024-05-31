@@ -21,7 +21,7 @@ deploy_to_azure:
     - apt-get update && apt-get install -y curl  # Install curl for HTTP requests
     - ls -la /builds/ArthiBasta/Co-pilotAIML/examples/walk-my-dog  # List files to ensure .tgz exists
     - if [ -f /builds/ArthiBasta/Co-pilotAIML/examples/walk-my-dog/*.tgz ]; then echo "File exists"; else echo "File does not exist"; fi
-    - curl --ftp-ssl -k -u "$AZURE_WEBAPP_USER:$AZURE_WEBAPP_PASSWORD" -T "/builds/ArthiBasta/Co-pilotAIML/examples/walk-my-dog/*.tgz" "ftps://$AZURE_WEBAPP_NAME.ftp.azurewebsites.windows.net/site/wwwroot/"
+    - curl --ftp-ssl -k -u "$AZURE_WEBAPP_USER:$AZURE_WEBAPP_PASSWORD" -T "/builds/ArthiBasta/Co-pilotAIML/examples/walk-my-dog/*.tgz" "ftps://waws-prod-pn1-015.ftp.azurewebsites.windows.net/site/wwwroot"
   dependencies:
     - build
   only:
