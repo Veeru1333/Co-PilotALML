@@ -27,8 +27,3 @@ deploy_to_azure:
   only:
     - main  # or the branch you want to deploy from
 
-  dependencies:
-    - build
-  only:
-    - main  # or the branch you want to deploy from
-
